@@ -36,11 +36,6 @@ namespace AgendaContactos
             AddContac.ShowDialog();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
@@ -53,6 +48,19 @@ namespace AgendaContactos
 
         private void GrillaContactos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            foreach (var contacto  in db.Contactos)
+            {
+                if ( contacto.Id == int.Parse(txtBuscar.Text))
+                {
+                    GrillaContactos.DataSource = new List<classContacto>(contacto);
+                }
+            }
+            
             
         }
     }

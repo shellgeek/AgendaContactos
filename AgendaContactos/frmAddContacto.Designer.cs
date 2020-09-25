@@ -38,6 +38,8 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtPais = new System.Windows.Forms.TextBox();
             this.lblPais = new System.Windows.Forms.Label();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
+            this.lblCiudad = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.GroupSexo = new System.Windows.Forms.GroupBox();
@@ -49,8 +51,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblCiudad = new System.Windows.Forms.Label();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.GroupSexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -157,6 +157,22 @@
             this.lblPais.TabIndex = 9;
             this.lblPais.Text = "Pais:";
             // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Location = new System.Drawing.Point(15, 187);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(170, 20);
+            this.txtCiudad.TabIndex = 8;
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.Location = new System.Drawing.Point(12, 170);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
+            this.lblCiudad.TabIndex = 7;
+            this.lblCiudad.Text = "Ciudad:";
+            // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(251, 142);
@@ -253,26 +269,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 343);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 314);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(416, 206);
+            this.dataGridView1.Size = new System.Drawing.Size(417, 249);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // lblCiudad
-            // 
-            this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Location = new System.Drawing.Point(12, 170);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
-            this.lblCiudad.TabIndex = 7;
-            this.lblCiudad.Text = "Ciudad:";
-            // 
-            // txtCiudad
-            // 
-            this.txtCiudad.Location = new System.Drawing.Point(15, 187);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(170, 20);
-            this.txtCiudad.TabIndex = 8;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmAddContacto
             // 

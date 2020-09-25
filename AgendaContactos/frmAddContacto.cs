@@ -63,5 +63,10 @@ namespace AgendaContactos
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = db.Contactos;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }
