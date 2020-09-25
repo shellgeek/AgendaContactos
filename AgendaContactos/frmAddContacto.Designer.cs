@@ -38,8 +38,6 @@
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtPais = new System.Windows.Forms.TextBox();
             this.lblPais = new System.Windows.Forms.Label();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
-            this.lblCiudad = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.GroupSexo = new System.Windows.Forms.GroupBox();
@@ -51,6 +49,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.GroupSexo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -153,25 +153,9 @@
             this.lblPais.AutoSize = true;
             this.lblPais.Location = new System.Drawing.Point(248, 170);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(43, 13);
+            this.lblPais.Size = new System.Drawing.Size(30, 13);
             this.lblPais.TabIndex = 9;
-            this.lblPais.Text = "Ciudad:";
-            // 
-            // txtCiudad
-            // 
-            this.txtCiudad.Location = new System.Drawing.Point(15, 187);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(170, 20);
-            this.txtCiudad.TabIndex = 8;
-            // 
-            // lblCiudad
-            // 
-            this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Location = new System.Drawing.Point(12, 170);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
-            this.lblCiudad.TabIndex = 7;
-            this.lblCiudad.Text = "Ciudad:";
+            this.lblPais.Text = "Pais:";
             // 
             // txtDireccion
             // 
@@ -274,6 +258,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(416, 206);
             this.dataGridView1.TabIndex = 1;
             // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.Location = new System.Drawing.Point(12, 170);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
+            this.lblCiudad.TabIndex = 7;
+            this.lblCiudad.Text = "Ciudad:";
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Location = new System.Drawing.Point(15, 187);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(170, 20);
+            this.txtCiudad.TabIndex = 8;
+            // 
             // frmAddContacto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,8 +308,6 @@
         private System.Windows.Forms.Label lblApellidos;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox txtCiudad;
-        private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtPais;
@@ -322,5 +320,7 @@
         private System.Windows.Forms.TextBox txtTelefonoFijo;
         private System.Windows.Forms.Label lblTelefonoFijo;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtCiudad;
+        private System.Windows.Forms.Label lblCiudad;
     }
 }

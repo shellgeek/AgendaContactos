@@ -18,12 +18,10 @@ namespace AgendaContactos
             InitializeComponent();
         }
 
-      
+        dataBaseContext db = new dataBaseContext();
         private void frmAddContacto_Load(object sender, EventArgs e)
         {
-      
-
-
+            CargarGV();
         }
 
         private void txtAgregarMod_Click(object sender, EventArgs e)
@@ -43,14 +41,8 @@ namespace AgendaContactos
             ObjContact.FelefonoFijo = txtTelefonoFijo.Text;
             ObjContact.Email = txtEmail.Text;
 
-            frmAgenda formagenda = new frmAgenda();
-            formagenda.ListaContacto.Add(ObjContact);
-            formagenda.ActualiazaGrilla();
-
-            dataGridView1.DataSource = formagenda.ListaContacto;
-            LimpiarTextbox();
-
-
+            db.Contactos.Add(ObjContact);
+            CargarGV();
             
         }
 
@@ -64,6 +56,12 @@ namespace AgendaContactos
             txtTelefono.Clear();
             txtTelefonoFijo.Clear();
             txtEmail.Clear();
+        }
+
+        public void CargarGV() {
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = db.Contactos;
         }
     }
 }
