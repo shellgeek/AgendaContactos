@@ -91,6 +91,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(641, 39);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "ToolBar";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // tsbAddContact
             // 
@@ -136,6 +137,7 @@
             this.GrillaContactos.Name = "GrillaContactos";
             this.GrillaContactos.Size = new System.Drawing.Size(616, 355);
             this.GrillaContactos.TabIndex = 2;
+            this.GrillaContactos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrillaContactos_CellContentClick);
             // 
             // statusStrip1
             // 

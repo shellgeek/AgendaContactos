@@ -19,10 +19,10 @@ namespace AgendaContactos
         }
 
         public List<classContacto> ListaContacto = new List<classContacto>();
-
+        dataBaseContext db = new dataBaseContext();
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            CargarGv();
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -36,14 +36,24 @@ namespace AgendaContactos
             AddContac.ShowDialog();
         }
 
-        public void ActualiazaGrilla()
-        {
-            GrillaContactos.DataSource = ListaContacto;
-        }
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+         void CargarGv() {
+            GrillaContactos.DataSource = null;
+            GrillaContactos.DataSource = db.Contactos;
+            }
+
+        private void GrillaContactos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
