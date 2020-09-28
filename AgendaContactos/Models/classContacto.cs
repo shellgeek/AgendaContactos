@@ -8,6 +8,7 @@ namespace AgendaContactos.Models
 {
     public class classContacto
     {
+        public string Id { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string Sexo{ get; set; }
