@@ -8,7 +8,7 @@ namespace AgendaContactos.Models
 {
     public class classContacto
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public string Sexo{ get; set; }
@@ -16,7 +16,6 @@ namespace AgendaContactos.Models
         public string Ciudad { get; set; }
         public string Pais { get; set; }
         public string TelefonoMovil { get; set; }
-        public int ID { get; set; }
         public string Email { get; set; }
     }
 }

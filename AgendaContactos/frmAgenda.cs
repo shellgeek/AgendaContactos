@@ -80,7 +80,7 @@ namespace AgendaContactos
                     }
                     else if (radioButton3.Checked == true)
                     {
-                        if (con.ID == int.Parse(txtBuscar.Text))
+                        if (con.Id == int.Parse(txtBuscar.Text))
                         {
                             GrillaContactos.DataSource = null;
                             GrillaContactos.DataSource = new List<classContacto>() { con };
@@ -123,7 +123,7 @@ namespace AgendaContactos
                     }
                     else if (tscCriterio.SelectedIndex == 2)
                     {
-                        if (con.ID == int.Parse(tstBuscar.Text))
+                        if (con.Id == int.Parse(tstBuscar.Text))
                         {
                             GrillaContactos.DataSource = null;
                             GrillaContactos.DataSource = new List<classContacto>() { con };
@@ -143,5 +143,29 @@ namespace AgendaContactos
         {
             CargarGv();
         }
+
+        private void bntEliminar_Click(object sender, EventArgs e)
+        {
+            if (db.Contactos.Count == 0)
+            {
+                MessageBox.Show("No hay registros que eliminar", "Eliminar Contacto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                db.Contactos.RemoveAt(GrillaContactos.CurrentRow.Index);
+                CargarGv();
+            }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
+
