@@ -47,6 +47,7 @@ namespace AgendaContactos
             //cargando el grid con info de la Db
             GrillaContactos.DataSource = null;
             GrillaContactos.DataSource = db.Contactos;
+            StatusLabel.Text = "Cantidad de Registros...:" + GrillaContactos.RowCount.ToString();
             }
 
         private void GrillaContactos_CellContentClick(object sender, DataGridViewCellEventArgs e)
