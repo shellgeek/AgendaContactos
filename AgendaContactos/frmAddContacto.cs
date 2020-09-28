@@ -38,7 +38,7 @@ namespace AgendaContactos
             ObjContact.Ciudad = txtCiudad.Text;
             ObjContact.Pais = txtPais.Text;
             ObjContact.TelefonoMovil = txtTelefono.Text;
-            ObjContact.FelefonoFijo = txtTelefonoFijo.Text;
+            ObjContact.ID = int.Parse(txtID.Text);
             ObjContact.Email = txtEmail.Text;
 
             db.Contactos.Add(ObjContact);
@@ -54,7 +54,7 @@ namespace AgendaContactos
             txtCiudad.Clear();
             txtPais.Clear();
             txtTelefono.Clear();
-            txtTelefonoFijo.Clear();
+            txtID.Clear();
             txtEmail.Clear();
         }
 
@@ -68,5 +68,6 @@ namespace AgendaContactos
         {
             
         }
+
     }
 }

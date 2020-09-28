@@ -53,13 +53,42 @@ namespace AgendaContactos
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            foreach (var contacto  in db.Contactos)
+            try
             {
-                if ( contacto.Id == int.Parse(txtBuscar.Text))
+                foreach (var con in db.Contactos)
                 {
-                    GrillaContactos.DataSource = new List<classContacto>(contacto);
+                    if (radioButton1.Checked == true)
+                    {
+                        if (con.Nombres.ToLower() == (txtBuscar.Text).ToLower())
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
+                    else if (radioButton2.Checked == true)
+                    {
+                        if (con.Apellidos.ToLower() == (txtBuscar.Text).ToLower())
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
+                    else if (radioButton3.Checked == true)
+                    {
+                        if (con.ID == int.Parse(txtBuscar.Text))
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                object exe = ex.Message;
+                throw ex;
+            }
+            
             
             
         }

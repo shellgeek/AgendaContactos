@@ -15,7 +15,7 @@ namespace AgendaContactos.Models
         public string Ciudad { get; set; }
         public string Pais { get; set; }
         public string TelefonoMovil { get; set; }
-        public string FelefonoFijo { get; set; }
+        public int ID { get; set; }
         public string Email { get; set; }
     }
 }

@@ -32,8 +32,8 @@
             this.txtAgregarMod = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtTelefonoFijo = new System.Windows.Forms.TextBox();
-            this.lblTelefonoFijo = new System.Windows.Forms.Label();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.lblID = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.txtPais = new System.Windows.Forms.TextBox();
@@ -61,8 +61,8 @@
             this.groupBox1.Controls.Add(this.txtAgregarMod);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.lblEmail);
-            this.groupBox1.Controls.Add(this.txtTelefonoFijo);
-            this.groupBox1.Controls.Add(this.lblTelefonoFijo);
+            this.groupBox1.Controls.Add(this.txtID);
+            this.groupBox1.Controls.Add(this.lblID);
             this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.lblTelefono);
             this.groupBox1.Controls.Add(this.txtPais);
@@ -109,21 +109,21 @@
             this.lblEmail.TabIndex = 15;
             this.lblEmail.Text = "Emai:";
             // 
-            // txtTelefonoFijo
+            // txtID
             // 
-            this.txtTelefonoFijo.Location = new System.Drawing.Point(251, 87);
-            this.txtTelefonoFijo.Name = "txtTelefonoFijo";
-            this.txtTelefonoFijo.Size = new System.Drawing.Size(146, 20);
-            this.txtTelefonoFijo.TabIndex = 14;
+            this.txtID.Location = new System.Drawing.Point(251, 87);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(37, 20);
+            this.txtID.TabIndex = 14;
             // 
-            // lblTelefonoFijo
+            // lblID
             // 
-            this.lblTelefonoFijo.AutoSize = true;
-            this.lblTelefonoFijo.Location = new System.Drawing.Point(248, 70);
-            this.lblTelefonoFijo.Name = "lblTelefonoFijo";
-            this.lblTelefonoFijo.Size = new System.Drawing.Size(68, 13);
-            this.lblTelefonoFijo.TabIndex = 13;
-            this.lblTelefonoFijo.Text = "Teléfono Fijo";
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(248, 70);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(18, 13);
+            this.lblID.TabIndex = 13;
+            this.lblID.Text = "ID";
             // 
             // txtTelefono
             // 
@@ -318,8 +318,8 @@
         private System.Windows.Forms.Button txtAgregarMod;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtTelefonoFijo;
-        private System.Windows.Forms.Label lblTelefonoFijo;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label lblCiudad;
