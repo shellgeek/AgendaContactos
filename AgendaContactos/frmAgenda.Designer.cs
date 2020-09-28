@@ -50,7 +50,7 @@
             this.tsbAddContact = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.btnRestFiltro = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
@@ -91,7 +91,7 @@
             this.tsbAddContact,
             this.toolStripButton1,
             this.toolStripButton2,
-            this.toolStripButton3,
+            this.btnRestFiltro,
             this.toolStripLabel1,
             this.tstBuscar,
             this.tscCriterio,
@@ -260,14 +260,15 @@
             this.toolStripButton2.Size = new System.Drawing.Size(36, 36);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
-            // toolStripButton3
+            // btnRestFiltro
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.btnRestFiltro.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnRestFiltro.Image = ((System.Drawing.Image)(resources.GetObject("btnRestFiltro.Image")));
+            this.btnRestFiltro.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRestFiltro.Name = "btnRestFiltro";
+            this.btnRestFiltro.Size = new System.Drawing.Size(36, 36);
+            this.btnRestFiltro.Text = "Quitar Filtros";
+            this.btnRestFiltro.Click += new System.EventHandler(this.btnRestFiltro_Click);
             // 
             // toolStripButton4
             // 
@@ -277,6 +278,7 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(36, 36);
             this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripButton5
             // 
@@ -342,7 +344,7 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton btnRestFiltro;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox tstBuscar;
         private System.Windows.Forms.ToolStripComboBox tscCriterio;

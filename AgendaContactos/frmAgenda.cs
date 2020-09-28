@@ -97,5 +97,51 @@ namespace AgendaContactos
             
             
         }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            // Boton buscar con parametros :) (No funciona sin los botones :))
+            try
+            {
+                foreach (var con in db.Contactos)
+                {
+                    if (tscCriterio.SelectedIndex==0)
+                    {
+                        if (con.Nombres.ToLower() == (tstBuscar.Text).ToLower())
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
+                    else if (tscCriterio.SelectedIndex == 1)
+                    {
+                        if (con.Apellidos.ToLower() == (tstBuscar.Text).ToLower())
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
+                    else if (tscCriterio.SelectedIndex == 2)
+                    {
+                        if (con.ID == int.Parse(tstBuscar.Text))
+                        {
+                            GrillaContactos.DataSource = null;
+                            GrillaContactos.DataSource = new List<classContacto>() { con };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                object exe = ex.Message;
+                throw ex;
+            }
+
+        }
+
+        private void btnRestFiltro_Click(object sender, EventArgs e)
+        {
+            CargarGv();
+        }
     }
 }
