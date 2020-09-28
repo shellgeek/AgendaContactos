@@ -86,7 +86,6 @@ namespace AgendaContactos
                             GrillaContactos.DataSource = new List<classContacto>() { con };
                         }
                     }
-                    CargarGv();
                 }
             }
             catch (Exception ex)
