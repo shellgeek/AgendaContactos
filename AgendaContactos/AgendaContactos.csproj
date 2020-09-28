@@ -7,7 +7,7 @@
     <ProjectGuid>{226603BD-6FE9-410D-B885-2CF595BE05C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>AgendaContactos</RootNamespace>
-    <AssemblyName>AgendaContactos</AssemblyName>
+    <AssemblyName>`</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
