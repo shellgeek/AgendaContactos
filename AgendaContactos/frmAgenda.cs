@@ -22,7 +22,7 @@ namespace AgendaContactos
         public List<classContacto> ListaContacto = new List<classContacto>();
         dataBaseContext db = new dataBaseContext();
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             CargarGv();
         }
 
