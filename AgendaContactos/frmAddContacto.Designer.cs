@@ -98,7 +98,7 @@
             this.txtEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEmail.Location = new System.Drawing.Point(17, 265);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(445, 23);
+            this.txtEmail.Size = new System.Drawing.Size(445, 27);
             this.txtEmail.TabIndex = 16;
             // 
             // lblEmail
@@ -106,7 +106,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(14, 246);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 15);
+            this.lblEmail.Size = new System.Drawing.Size(46, 20);
             this.lblEmail.TabIndex = 15;
             this.lblEmail.Text = "Emai:";
             // 
@@ -115,7 +115,7 @@
             this.txtID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtID.Location = new System.Drawing.Point(293, 100);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(42, 23);
+            this.txtID.Size = new System.Drawing.Size(42, 27);
             this.txtID.TabIndex = 14;
             // 
             // lblID
@@ -123,7 +123,7 @@
             this.lblID.AutoSize = true;
             this.lblID.Location = new System.Drawing.Point(289, 81);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(20, 15);
+            this.lblID.Size = new System.Drawing.Size(24, 20);
             this.lblID.TabIndex = 13;
             this.lblID.Text = "ID";
             // 
@@ -132,7 +132,7 @@
             this.txtTelefono.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTelefono.Location = new System.Drawing.Point(293, 48);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(170, 23);
+            this.txtTelefono.Size = new System.Drawing.Size(170, 27);
             this.txtTelefono.TabIndex = 12;
             // 
             // lblTelefono
@@ -140,7 +140,7 @@
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Location = new System.Drawing.Point(289, 29);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(86, 15);
+            this.lblTelefono.Size = new System.Drawing.Size(111, 20);
             this.lblTelefono.TabIndex = 11;
             this.lblTelefono.Text = "Teléfono Movil";
             // 
@@ -149,7 +149,7 @@
             this.txtPais.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPais.Location = new System.Drawing.Point(293, 216);
             this.txtPais.Name = "txtPais";
-            this.txtPais.Size = new System.Drawing.Size(170, 23);
+            this.txtPais.Size = new System.Drawing.Size(170, 27);
             this.txtPais.TabIndex = 10;
             // 
             // lblPais
@@ -157,7 +157,7 @@
             this.lblPais.AutoSize = true;
             this.lblPais.Location = new System.Drawing.Point(289, 196);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(31, 15);
+            this.lblPais.Size = new System.Drawing.Size(40, 20);
             this.lblPais.TabIndex = 9;
             this.lblPais.Text = "Pais:";
             // 
@@ -166,7 +166,7 @@
             this.txtCiudad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCiudad.Location = new System.Drawing.Point(17, 216);
             this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(198, 23);
+            this.txtCiudad.Size = new System.Drawing.Size(198, 27);
             this.txtCiudad.TabIndex = 8;
             // 
             // lblCiudad
@@ -174,7 +174,7 @@
             this.lblCiudad.AutoSize = true;
             this.lblCiudad.Location = new System.Drawing.Point(14, 196);
             this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(47, 15);
+            this.lblCiudad.Size = new System.Drawing.Size(61, 20);
             this.lblCiudad.TabIndex = 7;
             this.lblCiudad.Text = "Ciudad:";
             // 
@@ -183,7 +183,7 @@
             this.txtDireccion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDireccion.Location = new System.Drawing.Point(293, 164);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(170, 23);
+            this.txtDireccion.Size = new System.Drawing.Size(170, 27);
             this.txtDireccion.TabIndex = 6;
             // 
             // lblDireccion
@@ -191,7 +191,7 @@
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Location = new System.Drawing.Point(289, 144);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(61, 15);
+            this.lblDireccion.Size = new System.Drawing.Size(78, 20);
             this.lblDireccion.TabIndex = 5;
             this.lblDireccion.Text = "Dirección:";
             // 
@@ -212,7 +212,7 @@
             this.rdoOtros.AutoSize = true;
             this.rdoOtros.Location = new System.Drawing.Point(185, 23);
             this.rdoOtros.Name = "rdoOtros";
-            this.rdoOtros.Size = new System.Drawing.Size(54, 19);
+            this.rdoOtros.Size = new System.Drawing.Size(67, 24);
             this.rdoOtros.TabIndex = 2;
             this.rdoOtros.TabStop = true;
             this.rdoOtros.Text = "Otros";
@@ -223,7 +223,7 @@
             this.rdoFem.AutoSize = true;
             this.rdoFem.Location = new System.Drawing.Point(100, 22);
             this.rdoFem.Name = "rdoFem";
-            this.rdoFem.Size = new System.Drawing.Size(78, 19);
+            this.rdoFem.Size = new System.Drawing.Size(98, 24);
             this.rdoFem.TabIndex = 1;
             this.rdoFem.TabStop = true;
             this.rdoFem.Text = "Femenino";
@@ -234,7 +234,7 @@
             this.rdoMas.AutoSize = true;
             this.rdoMas.Location = new System.Drawing.Point(8, 23);
             this.rdoMas.Name = "rdoMas";
-            this.rdoMas.Size = new System.Drawing.Size(80, 19);
+            this.rdoMas.Size = new System.Drawing.Size(100, 24);
             this.rdoMas.TabIndex = 0;
             this.rdoMas.TabStop = true;
             this.rdoMas.Text = "Masculino";
@@ -245,7 +245,7 @@
             this.txtApellidos.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellidos.Location = new System.Drawing.Point(17, 100);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(198, 23);
+            this.txtApellidos.Size = new System.Drawing.Size(198, 27);
             this.txtApellidos.TabIndex = 3;
             // 
             // lblApellidos
@@ -253,7 +253,7 @@
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Location = new System.Drawing.Point(14, 81);
             this.lblApellidos.Name = "lblApellidos";
-            this.lblApellidos.Size = new System.Drawing.Size(62, 15);
+            this.lblApellidos.Size = new System.Drawing.Size(80, 20);
             this.lblApellidos.TabIndex = 2;
             this.lblApellidos.Text = "Apellidos: ";
             // 
@@ -262,7 +262,7 @@
             this.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Location = new System.Drawing.Point(17, 48);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(198, 23);
+            this.txtNombre.Size = new System.Drawing.Size(198, 27);
             this.txtNombre.TabIndex = 1;
             // 
             // lblNombre
@@ -270,22 +270,23 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Location = new System.Drawing.Point(14, 29);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(57, 15);
+            this.lblNombre.Size = new System.Drawing.Size(74, 20);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre: ";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 448);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 379);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(486, 97);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(486, 166);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmAddContacto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(546, 564);
