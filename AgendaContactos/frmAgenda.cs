@@ -18,6 +18,7 @@ namespace AgendaContactos
             InitializeComponent();
         }
 
+        // leyendo de la BD
         public List<classContacto> ListaContacto = new List<classContacto>();
         dataBaseContext db = new dataBaseContext();
         private void Form1_Load(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace AgendaContactos
 
         private void tsbAddContact_Click(object sender, EventArgs e)
         {
+            // abriendo el form
             frmAddContacto AddContac = new frmAddContacto();
             AddContac.ShowDialog();
         }
@@ -42,6 +44,7 @@ namespace AgendaContactos
         }
 
          void CargarGv() {
+            //cargando el grid con info de la Db
             GrillaContactos.DataSource = null;
             GrillaContactos.DataSource = db.Contactos;
             }
@@ -53,6 +56,7 @@ namespace AgendaContactos
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            // Boton buscar con parametros :) (No funciona sin los botones :))
             try
             {
                 foreach (var con in db.Contactos)

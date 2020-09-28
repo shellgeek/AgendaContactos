@@ -11,7 +11,7 @@ namespace AgendaContactos
     {
         public dataBaseContext()
         {
-
+            //base de datos
             this.Contactos = new List<classContacto>()
             {
                 new classContacto(){Nombres="Cristhian",Apellidos ="De Castro",Sexo="Masculino",Direccion="WinstonArnaud # 98",Ciudad="Santo Domigno",Email="Cristhiancastro01@gmail.com",Pais="Rep.Dom",TelefonoMovil="849-916-8407",ID=1},
@@ -26,7 +26,7 @@ namespace AgendaContactos
                 new classContacto(){Nombres="Maria",Apellidos="Del Carmen",Sexo="Femenino",Direccion="La torre eifel",Ciudad="Santo Domingo",Email="MDelCarmenV@Virgencita.com",Pais="Republica Dominicana",TelefonoMovil="849-056-2103",ID=10 }
             };
         }
-
+        //Lista base de datos
         public List<classContacto> Contactos;
     }
         

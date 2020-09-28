@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            //Componentes form contacto
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAgregarMod = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();

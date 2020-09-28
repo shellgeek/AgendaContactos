@@ -25,7 +25,7 @@ namespace AgendaContactos
         }
 
         private void txtAgregarMod_Click(object sender, EventArgs e)
-        {
+        {//Agregar
             classContacto ObjContact = new classContacto();
             ObjContact.Nombres = txtNombre.Text;
             ObjContact.Apellidos = txtApellidos.Text;
@@ -59,7 +59,7 @@ namespace AgendaContactos
         }
 
         public void CargarGV() {
-
+            //Cargar grid cuando inicie el proyecto
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = db.Contactos;
         }
